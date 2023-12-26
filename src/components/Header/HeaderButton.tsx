@@ -1,12 +1,6 @@
 const HeaderButton = () => {
   return (
     <div className="flex items-center gap-4">
-      <div className="sm:flex sm:gap-4">
-        <button className="bg-white text-black rounded-full pt-2 pb-2 pl-8 pr-8 uppercase font-fraunces">
-          Contact
-        </button>
-      </div>
-
       <div className="block md:hidden">
         <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
           <svg
