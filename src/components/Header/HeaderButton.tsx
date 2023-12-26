@@ -1,11 +1,18 @@
-const HeaderButton = () => {
+const HeaderButton = ({
+  handleOpenHumbugerMenu,
+}: {
+  handleOpenHumbugerMenu: () => void;
+}) => {
   return (
     <div className="flex items-center gap-4">
       <div className="block md:hidden">
-        <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+        <button
+          className="rounded bg-transparent p-2 text-gray-600 transition hover:text-gray-600/75"
+          onClick={handleOpenHumbugerMenu}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-7 w-7 text-white hover:text-gray-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
