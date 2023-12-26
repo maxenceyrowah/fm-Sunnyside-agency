@@ -19,6 +19,18 @@ module.exports = {
           "url('/src/assets/images/desktop/image-photography.jpg')",
         "photography-mobile":
           "url('/src/assets/images/mobile/image-photography.jpg')",
+
+        // tranform image
+        "transform-desktop":
+          "url('/src/assets/images/desktop/image-transform.jpg')",
+        "transform-mobile":
+          "url('/src/assets/images/mobile/image-transform.jpg')",
+
+        // Audience image
+        "audience-desktop":
+          "url('/src/assets/images/desktop/image-stand-out.jpg')",
+        "audience-mobile":
+          "url('/src/assets/images/mobile/image-stand-out.jpg')",
       },
       fontFamily: {
         fraunces: ["Fraunces", "sans-serif"],
@@ -38,6 +50,10 @@ module.exports = {
         "dark-grayish-blue": "hsl(232, 10%, 55%)",
         "grayish-blue": "hsl(210, 4%, 67%)",
         white: "hsl(0, 0%, 100%)",
+      },
+      screens: {
+        mobile: "375px",
+        desktop: "1440px",
       },
     },
   },

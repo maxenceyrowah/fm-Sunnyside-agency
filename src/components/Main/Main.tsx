@@ -11,7 +11,7 @@ const Main = () => {
       <Transform />
       <Audience />
 
-      <div className="flex h-screen">
+      <div className="flex md:h-screen md:flex-row flex-col">
         <Graphic />
         <Photography />
       </div>

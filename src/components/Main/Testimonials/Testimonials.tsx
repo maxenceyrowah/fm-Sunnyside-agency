@@ -7,7 +7,7 @@ const Testimonials = () => {
         Client testimonials
       </p>
 
-      <div className="flex gap-6 justify-around">
+      <div className="flex md:flex-row flex-col gap-6 justify-around">
         {testimonialsOptions.map((item) => (
           <div
             key={item.name}
@@ -15,14 +15,16 @@ const Testimonials = () => {
           >
             <img src={item.img} alt="avatar logo" className="rounded-full" />
             <div className="mt-10">
-              <div className="w-[23rem] text-dark-grayish">
+              <div className="md:w-[23rem] w-auto text-dark-grayish">
                 {item.description}
               </div>
             </div>
 
             <div className="mt-10">
               <p className="font-barlow font-bold">{item.name}</p>
-              <p className="text-sm text-dark-grayish">{item.poste}</p>
+              <p className="text-sm text-dark-grayish md:mb-0 mb-10">
+                {item.poste}
+              </p>
             </div>
           </div>
         ))}

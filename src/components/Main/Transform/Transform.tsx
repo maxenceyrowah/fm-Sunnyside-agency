@@ -1,17 +1,17 @@
-import TransformImg from "../../../assets/images/desktop/image-transform.jpg";
-
 const Transform = () => {
   return (
-    <div className="flex items-center">
-      <div className="w-3/6">
-        <div className="w-4/6 m-auto">
-          <p className="font-fraunces w-96 text-5xl">Transform your brand</p>
-          <div className="mt-10 text-desaturated-blue w-[30rem]">
+    <div className="md:flex md:flex-row md:items-center flex flex-col-reverse">
+      <div className="md:basis-3/6">
+        <div className="md:w-4/6 md:m-auto text-center">
+          <p className="md:w-96 md:text-left md:mt-0 text-4xl font-fraunces w-auto mt-5">
+            Transform your brand
+          </p>
+          <div className="md:text-left md:p-0 md:w-[25rem] md:mt-10 mt-5 text-desaturated-blue p-5">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </div>
-          <div className="mt-10">
+          <div className="md:text-left mt-10 md:mb-0 mb-10">
             <button className="uppercase font-fraunces border-b-[7px] border-primary-yellow">
               Learn more
             </button>
@@ -19,9 +19,7 @@ const Transform = () => {
         </div>
       </div>
 
-      <div className="w-3/6">
-        <img src={TransformImg} alt="transform img" className="w-full" />
-      </div>
+      <div className="md:basis-3/6 md:bg-transform-desktop md:h-screen h-[300px] md:bg-center bg-top bg-transform-mobile bg-cover bg-no-repeat"></div>
     </div>
   );
 };
